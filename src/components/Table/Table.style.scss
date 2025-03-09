@@ -1,0 +1,98 @@
+@use "../../styles/variables.scss" as *;
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: $color-default-white;
+  background-color: $color-rich-black;
+  overflow: auto;
+
+  &__title {
+    display: flex;
+    min-height: 44px;
+    border-bottom: 1px solid $color-dark-gray;
+
+    h2 {
+      display: flex;
+      place-items: center;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      border-right: 1px solid $color-dark-gray;
+      padding: 0 15px;
+      margin: 0;
+    }
+  }
+
+  &__container {
+    padding: 0 10px;
+    min-width: 1200px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $color-dark-gray;
+    column-gap: 24px;
+
+    li {
+      padding: 10px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      letter-spacing: 0.1px;
+      color: $color-light-gray;
+      width: 168px;
+      box-sizing: border-box;
+    }
+
+    li:first-child {
+      width: auto;
+    }
+
+    li:nth-child(2) {
+      flex-grow: 1;
+      width: auto;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    margin-right: 18px;
+    column-gap: 6px;
+    border-radius: 6px;
+    border: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: 30px;
+    color: $color-default-white;
+    background-color: $color-light-gray;
+
+    &:hover {
+      background-color: $color-dark-gray;
+    }
+  }
+
+  &__error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: $color-default-white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+}

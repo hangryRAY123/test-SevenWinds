@@ -1,0 +1,23 @@
+@use "../../styles/variables.scss" as *;
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  a {
+    display: block;;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    padding: 13px 4px;
+    color: $color-light-gray;
+    text-decoration: none;
+  }
+
+  a.active {
+    border-bottom: 2px solid $color-default-white;
+    color: $color-default-white;
+    pointer-events: none;
+  }
+}

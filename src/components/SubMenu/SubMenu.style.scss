@@ -1,0 +1,14 @@
+.sub_menu {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  button {
+    display: flex;
+    place-items: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

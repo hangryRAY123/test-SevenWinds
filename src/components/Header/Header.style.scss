@@ -1,0 +1,11 @@
+@use "../../styles/variables.scss" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  padding: 0 20px;
+  background-color: $color-dark-charcoal;
+  color: #fff;
+  border-bottom: 1px solid $color-dark-gray;
+}
