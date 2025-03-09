@@ -10,8 +10,7 @@ const startApp = async () => {
       const entityId = await initializeEntity();
       localStorage.setItem("entityId", entityId.toString());
     } catch (error) {
-      console.error("Failed to initialize entity:", error);
-      return;
+      return Promise.reject(error);
     }
   }
 

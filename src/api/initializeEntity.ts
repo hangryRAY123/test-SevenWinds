@@ -6,8 +6,7 @@ async function initializeEntity() {
     localStorage.setItem("entityId", entityId.toString()); //
     return entityId;
   } catch (error) {
-    console.error("Failed to create entity:", error);
-    throw error;
+    return Promise.reject(error);
   }
 }
 
